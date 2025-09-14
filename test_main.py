@@ -11,7 +11,7 @@ from unittest.mock import Mock, patch
 # Set test environment variables before importing the app
 os.environ["GROQ_API_KEY"] = "test_api_key_12345"
 
-from app.main import app
+from main import app
 
 
 @pytest.fixture

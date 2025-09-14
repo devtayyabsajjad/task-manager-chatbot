@@ -309,12 +309,15 @@ async def general_exception_handler(request, exc):
 
 if __name__ == "__main__":
     import uvicorn
-    
+
+    # Get port from environment (Railway uses $PORT)
+    port = int(os.getenv("PORT", "8000"))
+
     # Run the application
     uvicorn.run(
         "main:app",
         host="0.0.0.0",
-        port=8000,
+        port=port,
         reload=True,
         log_level="info"
     )

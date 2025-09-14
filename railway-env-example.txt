@@ -1,0 +1,23 @@
+# Railway Environment Variables Template
+# Copy this to your Railway project's environment variables
+
+# REQUIRED: Groq API Configuration
+GROQ_API_KEY=your_groq_api_key_here
+
+# OPTIONAL: Model Configuration
+GROQ_DEFAULT_MODEL=llama-3.1-8b-instant
+
+# OPTIONAL: Server Configuration (Railway sets PORT automatically)
+HOST=0.0.0.0
+DEBUG=false
+
+# OPTIONAL: API Limits
+MAX_MESSAGE_LENGTH=4000
+DEFAULT_MAX_TOKENS=1024
+DEFAULT_TEMPERATURE=0.7
+
+# OPTIONAL: CORS Configuration (for JavaScript integration)
+ALLOWED_ORIGINS=*
+
+# OPTIONAL: Logging
+LOG_LEVEL=INFO

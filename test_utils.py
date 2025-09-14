@@ -7,7 +7,7 @@ import pytest
 from datetime import datetime
 from unittest.mock import Mock
 
-from app.utils import (
+from utils import (
     sanitize_message,
     format_chat_response,
     validate_model_name,

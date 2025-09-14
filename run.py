@@ -10,10 +10,8 @@ import argparse
 import uvicorn
 from pathlib import Path
 
-# Add the app directory to Python path
-sys.path.insert(0, str(Path(__file__).parent / "app"))
-
-from app.config import settings, validate_settings
+# Import from current directory
+from config import settings, validate_settings
 
 
 def main():
